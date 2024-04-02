@@ -4,26 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="PROXY - Be There, from Anywhere">
-    <meta property="og:description" content="PROXY is a new way of interacting with the physical world.">
-    <meta property="og:image" content="https://www.what-is-proxy.com/PROXY-LOGO.png">
-    <title>PROXY - Be There, from Anywhere</title>
+    <meta property="og:title" content="Proxy - Be There, from Anywhere">
+    <meta property="og:description" content="Proxy is a new way of interacting with the physical world.">
+    <meta property="og:image" content="https://www.what-is-proxy.com/Proxy-LOGO.png">
+    <title>Proxy - Be There, from Anywhere</title>
+    <style>
+        :root,
+        [data-theme="light"] {
+            --h1-color: #44446a;
+            --h2-color: #64648a;
+            --bg-color: #e8e8ea;
+            --text-color: #333333;
+            --button-text-color: #a83030;
+            --button-bg-color: #d8d8d8;
+            --link-color: #a83030;
+        }
+
+        [data-theme="dark"] {
+            --h1-color: #bbbbda;
+            --h2-color: #9999aa;
+            --bg-color: #18181a;
+            --text-color: #cccccc;
+            --button-text-color: #f86060;
+            --button-bg-color: #444444;
+            --link-color: #a83030;
+        }
+
+        html {
+            font-family: sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        body {
+            max-width: 1200px;
+            padding-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                margin-left: 20px;
+                padding-right: 100px;
+            }
+        }
+
+        h1 {
+            color: var(--h1-color);
+        }
+
+        h2 {
+            color: var(--h2-color);
+        }
+
+        a {
+            transition: color 0.5s ease;
+            color: var(--text-color);
+        }
+
+        a:hover {
+            color: var(--link-color);
+        }
+
+    </style>
+    <script>
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function updateTheme() {
+            const theme = prefersDarkMode.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', theme)
+        }
+
+        updateTheme();
+        prefersDarkMode.addEventListener("change", () => updateTheme());
+    </script>
 </head>
 
 <body>
-    <h1>PROXY</h1>
+    <h1>Proxy</h1>
     <h3><em>Be There, from Anywhere</em></h3>
 
-    <h2><em>What is PROXY?</em></h2>
+    <h2><em>What is Proxy?</em></h2>
     <p><strong>Imagine stepping into another place, another body, without leaving your home.</strong></p>
-    <p>PROXY combines advancements in high-speed internet, virtual reality, 3D printing, artificial intelligence, and
-        robotics to create a new way of interacting with the physical world. You will be able to pilot physical robots and vehicles, 
-        known as a Proxy, in the real world, from anywhere on the planet, for an affordable price.</p>
+    <p>Proxy combines advancements in high-speed internet, virtual reality, 3D printing, artificial intelligence, and
+        robotics to create a new way of interacting with the physical world. You will be able to pilot physical robots
+        and vehicles, known as a Proxy, in the real world, from anywhere on the planet, for an affordable price.</p>
     <p>Your first Proxy will connect you to the physical world, just as the internet connects you to the digital world.
         You can inhabit a physical device from anywhere,breaking down barriers and opening up infinite possibilities.
         By applying technological advancements in several fields, we aim to create an immersive and human experience,
         both for the person using the Proxy and those interacting with the Proxy device in the physical world.</p>
-    <p>We are building the future of interaction: PROXY will bridge the gap between the physical and digital world.</p>
+    <p>We are building the future of interaction: Proxy will bridge the gap between the physical and digital world.</p>
 
     <h2><em>Why would I use Proxy?</em></h2>
     <ul>
@@ -41,32 +112,36 @@
         </li>
         <li><em>Enhance Mobility</em>: Participate in physical events and activities, even with mobility issues.</li>
     </ul>
-    <p>PROXY will empower you to be anywhere, anytime: you will experience the world like never before.</p>
+    <p>Proxy will empower you to be anywhere, anytime: you will experience the world like never before.</p>
 
-    <h2><em>Will PROXY work?</em></h2>
+    <h2><em>Will Proxy work?</em></h2>
     <p>We have the potential to make this happen:</p>
     <ul>
         <li><strong>The technology is ready:</strong> Advancements in VR, robotics, and AI have reached a point where
-            PROXY is now feasible and affordable.</li>
+            Proxy is now feasible and affordable.</li>
         <li><strong>The need is real:</strong> There is a growing demand for ways to bridge the physical and digital
             world, especially in post-pandemic society.</li>
         <li><strong>The team is passionate and determined:</strong> We are a diverse group of individuals with expertise
-            in various fields, all driven by the potential of PROXY.</li>
+            in various fields, all driven by the potential of Proxy.</li>
         <li><strong>We are committed to open source:</strong> We believe in collaboration and community involvement,
-            which is why we are building PROXY with the same open-source mindset.</li>
+            which is why we are building Proxy with the same open-source mindset.</li>
     </ul>
     <p>We are taking a realistic and grounded approach to development, with a focus on delivering a working demo by
-        Summer 2024. 
-    <br>We are confident that there is a very real path to bringing PROXY to life, and work has already
-        begun to make this happen.</p>
+        Summer 2024. We are confident that there is a very real path to bringing Proxy to life, and work has already
+        begun to make this happen.
+    </p>
 
-    <h2><em>Who is working on PROXY, and can I get involved?</em></h2>
+    <h2><em>Who is working on Proxy, and can I get involved?</em></h2>
     <p>We are a small team, focused on doing more with less. 
-    We are not seeking investments before our first demo, but support via no-obligation grants is welcome (contact <a
-            href="mailto:funding@what-is-proxy.com">funding@what-is-proxy.com</a>).
-    If you possess irreplaceable skills that are crucial to our success, contact <a
-            href="mailto:work@what-is-proxy.com">work@what-is-proxy.com</a>. </p>
-    <p>Led by <a href="jckwind.com">Jack Wind</a>.</p>
+        State-of-the-art AI expands what we can do by many magnitudes, allowing us to punch above our weight and deliver on our ambitious goals, 
+        while minimizing bureaucracy and complexity.</p>
+    <ul>
+        <li>We are not seeking investments before our first demo, but support via no-obligation grants is welcome
+            (<a href="mailto:funding@what-is-proxy.com">contact us</a>).</li>
+        <li>If you possess irreplaceable skills that are crucial to our success, email <a
+                href="mailto:work@what-is-proxy.com">work@what-is-proxy.com</a>.</li>
+    </ul>
+    <p>Led by <a href="https://jckwind.com">Jack Wind</a>.</p>
 </body>
 
 </html>
