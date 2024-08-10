@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Proxy: Be There, from Anywhere">
-    <meta property="og:description" content="Proxy is a new way of interacting with the physical world.">
-    <meta property="og:image" content="https://what-is-proxy.com/PROXY-LOGO-WIDE.png">
+    <meta property="og:title" content="Proxy: Be There, From Anywhere">
+    <meta property="og:description"
+        content="Proxy is a telepresence robotics company building a future where you can be anywhere, anytime.">
+    <meta property="og:image" content="https://what-is-proxy.com/proxy-promo.png">
     <meta property="og:url" content="https://what-is-proxy.com">
     <meta property="og:site_name" content="Proxy">
-    <meta name="twitter:title" content="Proxy: Be There, from Anywhere">
-    <meta name="twitter:description" content="Proxy is a new way of interacting with the physical world.">
-    <meta name="twitter:image" content="https://what-is-proxy.com/PROXY-LOGO-WIDE.png">
+    <meta name="twitter:title" content="Proxy: Be There, From Anywhere">
+    <meta name="twitter:description"
+        content="Proxy is a telepresence robotics company building a future where you can be anywhere, anytime.">
+    <meta name="twitter:image" content="https://what-is-proxy.com/proxy-promo.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" type="image/png" href="https://what-is-proxy.com/PROXY-LOGO.png">
     <link rel="icon" type="image/png" href="https://what-is-proxy.com/favicon-32x32.png"
@@ -19,37 +21,57 @@
     <link rel="manifest" href="https://what-is-proxy.com/site.webmanifest">
     <meta name="theme-color" content="#f2f2f4" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1e1c1c" media="(prefers-color-scheme: dark)" />
-    <title>Proxy: Be There, from Anywhere</title>
+    <title>Proxy: Be There, From Anywhere</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prometo:wght@300&family=Quicksand&display=swap');
+
         :root,
         [data-theme="light"] {
-            --primary-color: #6B8E23;
-            --h1-color: #44446a;
-            --h2-color: #64648a;
-            --text-color: #333333;
-            --link-color: var(--primary-color);
-            --bg-color: #f2f2f4;
+            --primary-color: #558a96; /* Teal */
+            --secondary-color: #d77732; /* Orange */
+            --text-color: #595959; /* Dark Gray */
+            --bg-color: #dad0af; /* Light Beige */
         }
 
         [data-theme="dark"] {
-            --primary-color: #6B8E23;
-            --h1-color: #dac8c8;
-            --h2-color: #b3a6a6;
-            --text-color: #d9d9d9;
-            --link-color: var(--primary-color);
-            --bg-color: #1e1c1c;
-        }
-
-        html {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            --primary-color: #558a96; /* Teal */
+            --secondary-color: #d77732; /* Orange */
+            --text-color: #dad0af; /* Light Beige */
+            --bg-color: #595959; /* Dark Gray */
         }
 
         body {
-            max-width: 1000px;
+            font-family: 'Prometo', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
         }
 
         p {
@@ -57,47 +79,17 @@
             margin-bottom: 1.5rem;
         }
 
-        .tagline {
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: var(--text-color);
-            margin-bottom: 2rem;
-        }
-
-        ul {
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        h1 {
-            color: var(--h1-color);
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            color: var(--h2-color);
-            font-size: 2rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-        }
-
         a {
-            color: var(--link-color);
+            color: var(--primary-color);
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         a:hover {
-            color: var(--primary-color);
             text-decoration: underline;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
         }
 
         .image-container {
@@ -110,9 +102,12 @@
             height: auto;
         }
 
-        .highlight {
-            color: var(--primary-color);
-            font-weight: bold;
+        .tagline {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--text-color);
+            margin-bottom: 2rem;
         }
     </style>
     <script>
@@ -129,94 +124,51 @@
 </head>
 
 <body>
-    <h1>Proxy</h1>
-    <h3><em>Be There, from Anywhere</em></h3>
+    <div class="container">
+        <h1>Proxy</h1>
+        <h3>Be There, From Anywhere</h3>
 
-    <h2>What is Proxy?</h2>
-    <p><span class="highlight">Proxy</span> is a system that lets you experience the world remotely through
-        VR-controlled robots. See what it sees, hear what it hears, and move it with intuitive ease.</p>
+        <p>Proxy is a telepresence robotics company building a future where you can be anywhere, anytime.</p>
 
-    <h2>How will Proxy make me happier?</h2>
-    <ul>
-        <li><span class="highlight">Ditch the Commute:</span> Say goodbye to traffic jams and hello to more free time.
-        </li>
-        <li><span class="highlight">Explore the World:</span> Discover new places, cultures, and adventures without
-            leaving your
-            couch.</li>
-        <li><span class="highlight">Connect with Others:</span> Be there for all the important moments, big or small, no
-            matter the
-            distance.</li>
-        <li><span class="highlight">Reimagined Freedom:</span> Go anywhere, do anything - remotely.</li>
-    </ul>
+        <h2>What We're Building</h2>
 
-    <h2>Who is Proxy?</h2>
-    <p>We're a team of builders inspired by Proxy's potential to revolutionize the way we live, work, and connect, and
-        we're already making it happen. We're using AI and a "do more with less" philosophy to outwork traditional
-        research labs.</p>
+        <p>We're developing a platform that combines immersive VR, advanced robotics, and AI to enable
+            a new level of remote presence and interaction. Our two core products:</p>
 
-    <p>We are confident that the ability to control robots remotely in real-time has the potential to revolutionize
-        countless industries. If you are interested in integrating Proxy's technology into your products, please contact
-        us: <a href="mailto:contact@what-is-proxy.com">contact@what-is-proxy.com</a>
-    </p>
+        <h3>Proxy Robot</h3>
+        <p>A modular and customizable robot designed to navigate various environments, controlled remotely by a human
+            pilot
+            through an immersive VR interface.
+        </p>
 
-    <h2>What's Next?</h2>
-    <p>The first prototypes are under development, with a demo planned for Summer 2024. Be a part of the journey and
-        help us bring Proxy to life:</p>
+        <h3>Proxy Terminal</h3>
+        <p>A user-friendly device that connects to a VR headset, acting as a communication hub for real-time, low-latency
+            control of the Proxy Robot.</p>
 
-    <ul>
-        <li>Stay Updated: <a href="https://twitter.com/whatisproxy">Follow the Twitter</a></li>
-        <li>Support Proxy: <a href="https://www.gofundme.com/f/be-there-from-anywhere" class="highlight">Donate to
-                the GoFundMe</a></li>
-    </ul>
+        <h2>Our Vision</h2>
 
-    <div class="image-container">
-        <img src="proxy-website-art.png" alt="Proxy: Be there, from anywhere">
-        <p class="tagline">Proxy: Be there, from anywhere</p>
+        <p>Imagine attending a meeting across the globe from your living room, exploring a museum from your wheelchair,
+            or collaborating with colleagues on a project as if you were in the same room, no matter the distance.
+            Proxy is making this a reality, bringing the power of physical presence to anyone, anywhere.
+        </p>
+
+        <h2>Why Proxy?</h2>
+
+        <p>We're not just building robots; we're building a platform for connection and empowerment. We believe in a
+            future where technology enhances human capabilities, breaks down barriers, and makes the impossible
+            possible.</p>
+
+        <div class="image-container">
+            <img src="proxy-website-art.png" alt="Proxy: Telepresence Robot">
+        </div>
+
+        <h2>Get in Touch</h2>
+
+        <p>We're actively seeking partners, investors, and talented individuals to join us. If you're
+            interested in learning more or collaborating with Proxy, contact us at:
+            <a href="mailto:contact@what-is-proxy.com">contact@what-is-proxy.com</a></p>
+        <p>Follow our progress on Twitter: <a href="https://twitter.com/whatisproxy">@whatisproxy</a></p>
     </div>
-
-    <h1>FAQs</h1>
-
-    <h2><em>How is Proxy different from traditional robots?</em></h2>
-    <p>Unlike traditional robots designed for automation or pre-programmed tasks, Proxy is specifically built for
-        real-time human control. This means you directly pilot the robot, experiencing the world through its sensors and
-        making
-        decisions in the moment.
-    </p>
-
-    <h2><em>How do I use Proxy?</em></h2>
-    <p>The <span class="highlight">Proxy Terminal</span> is the device that will allow humans to remotely
-        connect to their <span class="highlight">Proxy</span> robot, providing an immersive and interactive experience.
-    </p>
-
-    <h2><em>Do I need special skills to operate a Proxy?</em></h2>
-    <p>Absolutely not! We're designing Proxy to be intuitive and easy to use. If you can ride a bike or play a video
-        game, you can pilot a Proxy. Our goal is to make this technology accessible to everyone.</p>
-
-    <h2><em>How far can I control my Proxy from?</em></h2>
-    <p>The range of control is virtually limitless, thanks to high-speed internet connectivity. You can pilot your Proxy
-        from anywhere with a stable internet connection, regardless of geographical distance.</p>
-
-    <h2><em>Can I customize my Proxy?</em></h2>
-    <p>Definitely! We believe your Proxy should be an extension of yourself. Our robots are designed to be modular and
-        customizable, allowing you to personalize its appearance and functionality to suit your needs and preferences.
-        We also plan to open-source the Proxy software, and we will encourage others to build their own custom Proxy.
-    </p>
-
-    <h2><em>How much will Proxy cost?</em></h2>
-    <p>
-        While final pricing is still being determined, our goal is to make Proxy affordable and accessible. We hope to
-        offer the first Proxy robots for <span class="highlight">~$3000</span>,
-        and the Proxy Terminal for <span class="highlight">~$700</span>. We are making Proxy affordable,
-        without compromising on quality or performance.
-    </p>
-
-    <h2><em>When will Proxy be available?</em></h2>
-    <p>Our team is actively developing the first Proxy prototype and is on track for a demo in Summer 2024. We will
-        announce more specific timelines for product availability as we get closer to launch.</p>
-
-    <h2><em>How can I get involved in the development of Proxy?</em></h2>
-    <p>You can support Proxy by contributing to our <a href="https://www.gofundme.com/f/be-there-from-anywhere"
-            class="highlight">GoFundMe</a>. Your donation will fund the development of our first prototypes.</p>
 </body>
 
 </html>
