@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta Tags for SEO and Social Media -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reclaim your time and peace of mind with Proxy: a personal AI that learns your communication style and handles tasks when you're unavailable.">
-    <meta property="og:title" content="Proxy: The AI That Thinks Like You, Locally and Privately.">
-    <meta property="og:description" content="Reclaim your time and peace of mind with Proxy: a personal AI that learns your communication style and handles tasks when you're unavailable.">
+    <title>Proxy: Your Personal AI, Locally and Privately</title>
+    <meta name="description" content="Experience the future of personal AI with Proxy—a local, private AI that thinks and communicates like you. Reclaim your time and enhance your productivity.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Proxy: Your Personal AI, Locally and Privately">
+    <meta property="og:description" content="Experience the future of personal AI with Proxy—a local, private AI that thinks and communicates like you. Reclaim your time and enhance your productivity.">
     <meta property="og:url" content="https://what-is-proxy.com">
     <meta property="og:site_name" content="Proxy">
-    <meta name="twitter:title" content="Proxy: The AI That Thinks Like You, Locally and Privately.">
-    <meta name="twitter:description" content="Reclaim your time and peace of mind with Proxy: a personal AI that learns your communication style and handles tasks when you're unavailable.">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="shortcut icon" type="image/png" href="https://what-is-proxy.com/PROXY-LOGO.png">
-    <link rel="icon" type="image/png" href="https://what-is-proxy.com/favicon-32x32.png" sizes="32x32 48x48 128x128 256x256">
-    <link rel="manifest" href="https://what-is-proxy.com/site.webmanifest">
-    <meta name="theme-color" content="#f2f2f4" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1e1c1c" media="(prefers-color-scheme: dark)" />
-    <title>Proxy: The AI That Thinks Like You, Locally and Privately.</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Prometo:wght@300&family=Quicksand:wght@400;700&display=swap');
+    <meta property="og:image" content="https://what-is-proxy.com/og-image.png">
 
-        :root,
-        [data-theme="light"] {
-            --primary-color: #4a7a84; /* Slightly darker teal */
-            --secondary-color: #e67e22; /* Brighter orange */
-            --text-color: #333333; /* Darker gray for better contrast */
-            --bg-color: #f5f5f5; /* Softer light background */
-            --accent-color: #f0e6d2; /* Light beige for accents */
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Proxy: Your Personal AI, Locally and Privately">
+    <meta name="twitter:description" content="Experience the future of personal AI with Proxy—a local, private AI that thinks and communicates like you. Reclaim your time and enhance your productivity.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://what-is-proxy.com/twitter-card.png">
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="https://what-is-proxy.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://what-is-proxy.com/favicon.ico" type="image/x-icon">
+
+    <!-- Manifest and Theme Color -->
+    <link rel="manifest" href="https://what-is-proxy.com/site.webmanifest">
+    <meta name="theme-color" content="#4a7a84">
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Prometo:wght@300&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Theming */
+        :root {
+            --primary-color: #4a7a84;
+            --secondary-color: #e67e22;
+            --text-color: #333333;
+            --bg-color: #f5f5f5;
+            --accent-color: #f0e6d2;
         }
 
         [data-theme="dark"] {
-            --primary-color: #4a7a84; /* Slightly darker teal */
-            --secondary-color: #e67e22; /* Brighter orange */
-            --text-color: #f5f5f5; /* Light text for dark mode */
-            --bg-color: #2c2c2c; /* Darker background */
-            --accent-color: #3a3a3a; /* Darker accent for dark mode */
+            --text-color: #f5f5f5;
+            --bg-color: #2c2c2c;
+            --accent-color: #3a3a3a;
         }
 
+        /* Global Styles */
         body {
             font-family: 'Prometo', sans-serif;
             background-color: var(--bg-color);
@@ -58,7 +67,7 @@
             font-family: 'Quicksand', sans-serif;
             font-size: 3.5rem;
             color: var(--primary-color);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         h2 {
@@ -93,17 +102,10 @@
             color: var(--secondary-color);
         }
 
-        .tagline {
-            font-size: 1.3rem;
-            font-weight: 300;
-            color: var(--text-color);
-            margin-bottom: 2.5rem;
-        }
-
         .cta-button {
             display: inline-block;
             background-color: var(--secondary-color);
-            color: white;
+            color: #ffffff;
             padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
@@ -116,13 +118,13 @@
             background-color: var(--primary-color);
         }
 
-        /* Section separation */
+        /* Section Styles */
         section {
             padding: 2rem 0;
             border-top: 1px solid var(--accent-color);
         }
 
-        /* Responsive adjustments */
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -145,57 +147,67 @@
             }
         }
     </style>
+
+    <!-- Theme Switching Script -->
     <script>
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
         function updateTheme() {
-            const theme = prefersDarkMode.matches ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-theme', prefersDarkMode.matches ? 'dark' : 'light');
         }
 
         updateTheme();
-        prefersDarkMode.addEventListener("change", updateTheme);
+        prefersDarkMode.addEventListener('change', updateTheme);
     </script>
 </head>
-
 <body>
     <div class="container">
         <h1>Proxy</h1>
-
-        <h3>always available, always private, always you.</h3>
-
-        <p>Proxy is personal AI that runs locally on your devices. It's designed to learn your communication style, decision-making processes, and task management preferences. Think of it as an intelligent extension of yourself, ready to handle emails, messages, and routine tasks when you're unavailable or focused on high-priority work. Running entirely on your device, Proxy ensures privacy while seamlessly integrating into your life.</p>
+        <h3>Always Available, Always Private, Always You</h3>
+        <p>
+            Proxy is your personal AI that runs locally on your devices. Designed to learn your unique communication style and preferences, Proxy handles emails, messages, and routine tasks when you're unavailable or focusing on what matters most. Operating entirely on your device, Proxy ensures your privacy while seamlessly integrating into your daily life.
+        </p>
 
         <section>
             <h2>Cutting-Edge AI, Right on Your Device</h2>
-            <p>Leveraging the power of Apple silicon, Proxy processes your data locally, giving you complete control over your privacy. Our advanced inference algorithms ensure high-quality, coherent, and diverse outputs that sound like you. Proxy is optimized to deliver exceptional performance without compromising quality or security.</p>
+            <p>
+                Powered by the latest technology, Proxy processes your data locally, giving you complete control over your privacy. Our advanced algorithms deliver high-quality, coherent outputs that resonate with your personal style. Experience exceptional performance without compromising on security.
+            </p>
         </section>
 
         <section>
-            <h2>Seamless Integration with Cloud Power</h2>
-            <p>When faced with more complex reasoning tasks, Proxy can securely leverage cloud-based AI services. Our hybrid system ensures that your sensitive data remains local while still leveraging cutting-edge models when needed. It's the best of both worlds: local privacy with cloud capabilities.</p>
+            <h2>Seamless Integration with Cloud Capabilities</h2>
+            <p>
+                For complex tasks, Proxy can securely utilize cloud-based AI services. Our hybrid system ensures your sensitive data remains local while accessing advanced models when needed. Enjoy the best of both worlds: local privacy with the power of the cloud.
+            </p>
         </section>
 
         <section>
             <h2>Your Personal AI, Evolved</h2>
-            <p>Proxy is not just a tool — it's your reflection. Our advanced personalization mechanisms allow Proxy to adapt to your unique communication style and preferences over time. From understanding your writing style to managing your tasks, Proxy becomes an extension of you, helping you achieve more with less effort.</p>
+            <p>
+                Proxy isn't just a tool—it's a reflection of you. Through advanced personalization, Proxy adapts to your unique communication style and evolves over time. From understanding your writing nuances to managing your tasks, Proxy becomes an extension of you, helping you achieve more with less effort.
+            </p>
         </section>
 
         <section>
             <h2>The Future of Work and Communication</h2>
-            <p>You can delegate tasks and coordinate your efforts like never before. Your Proxy understands context deeply, building complex webs of understanding and memory, which helps you manage multiple jobs simultaneously. It's not just about productivity — it's about amplifying your abilities and reclaiming your time.</p>
+            <p>
+                Delegate tasks and coordinate like never before. Proxy deeply understands context, building complex webs of knowledge to help you manage multiple responsibilities simultaneously. It's not just about productivity—it's about amplifying your capabilities and reclaiming your time.
+            </p>
         </section>
 
         <section>
-            <h2>Looking Forward</h2>
-            <p>Proxy is currently in development, and we are preparing to launch our pilot program this fall. We will select an initial group of <span class="highlight">10 participants</span> to work directly with the Proxy team and be the first to receive a digital proxy. Contact us for more information about the pilot program.</p>
+            <h2>Join Our Pilot Program</h2>
+            <p>
+                Proxy is currently in development, and we're excited to launch our pilot program this fall. We're selecting an initial group of <span class="highlight">10 participants</span> to work closely with our team and be among the first to experience Proxy. Interested? Contact us for more information.
+            </p>
+            <a href="mailto:contact@what-is-proxy.com" class="cta-button">Get in Touch</a>
         </section>
 
         <section class="contact-section">
-            <p>Contact us: <a href="mailto:contact@what-is-proxy.com" class="contact-link highlight" rel="noopener noreferrer" aria-label="Email the Proxy team">contact@what-is-proxy.com</a></p>
-            <p>Follow us: <a href="https://twitter.com/whatisproxy" class="highlight" rel="noopener noreferrer" aria-label="Follow Proxy on Twitter">@whatisproxy</a></p>
+            <p>Contact us: <a href="mailto:contact@what-is-proxy.com" class="highlight" aria-label="Email the Proxy team">contact@what-is-proxy.com</a></p>
+            <p>Follow us on Twitter: <a href="https://twitter.com/whatisproxy" class="highlight" target="_blank" rel="noopener noreferrer" aria-label="Follow Proxy on Twitter">@whatisproxy</a></p>
         </section>
     </div>
 </body>
-
 </html>
